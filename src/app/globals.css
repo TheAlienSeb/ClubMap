@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; 
+    --foreground: #ededed;  
   }
 }
 
@@ -23,4 +23,172 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} 
+*/
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1b1b1b;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: whitesmoke;
+  border: 2px solid rgba(0,0,0);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .inner-box {
+  width: 100%;
+  padding: 35px;
+}
+
+.inner-box h2 { 
+  font-size: 2.5em;
+  color: #111111;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inner-box p {
+  font-size: 0.9em;
+  color: #111111;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.icons {
+  position: relative;
+  bottom: -2px;
+}
+
+.mail-icon {
+  position: relative;
+  bottom: -3px;
+}
+
+.eye-icon {
+  position: relative;
+  bottom: -2px;
+  right: -8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.input-box, .sign-input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #000000;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 85%;
+  height: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.view-password {
+  position: relative;
+  right: -298px;
+  top: -42px;
+}
+
+.remember-forgot {
+  font-size: .9em;
+  color: #111111;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.remember-forgot label input {
+  position: relative;
+  accent-color: #000000;
+  margin-right: 3px;
+  bottom: -1.5px;
+}
+
+.remember-forgot a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #111111;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.sign-up p {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.sign-up {
+  text-align: center;
+  user-select: none;
+}
+
+.sign-up a{
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.signup-box {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: whitesmoke;
+  border: 2px solid rgba(0,0,0);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-box .inner-box {
+  width: 100%;
+  padding: 35px;
+}
+
+.sign-input-box input {
+  width: 93%;
+  height: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
 }
