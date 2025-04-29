@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-import { CiUser, CiLock} from 'react-icons/ci';
+import { CiUser, CiLock } from 'react-icons/ci';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { handleLogInSubmit } from '../validations/loginValid'
@@ -21,22 +21,22 @@ export default function LogIn() {
 
           <div className="input-box">
             <p>Username</p>
-            <CiUser className="icons"/>
+            <CiUser className="icons" />
             <input required type="text" placeholder="Enter your username"></input>
           </div>
 
           <div className="input-box">
             <p>Password</p>
-            <CiLock className="icons"/>
+            <CiLock className="icons" />
             <input required type={showPassword ? "text" : "password"} placeholder="Enter your password"></input>
           </div>
 
-          
+
           <div className="view-password">
-              {showPassword ? 
+            {showPassword ?
               (<FaEyeSlash className="eye-icon" onClick={() => setShowPassword(false)} />) :
               (<FaEye className="eye-icon" onClick={() => setShowPassword(true)} />)
-              }
+            }
           </div>
 
           <div className="remember-forgot">
@@ -52,7 +52,7 @@ export default function LogIn() {
           </div>
         </form>
 
-        </div>
+      </div>
     </div>
   );
 }

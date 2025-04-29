@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { handleSignUpSubmit } from '../validations/signupValid'
 
-import { CiUser, CiLock, CiMail} from 'react-icons/ci';
+import { CiUser, CiLock, CiMail } from 'react-icons/ci';
 
 export default function SignUp() {
 
@@ -15,31 +15,31 @@ export default function SignUp() {
 
           <div className="sign-input-box">
             <p>Username</p>
-            <CiUser className="icons"/>
+            <CiUser className="icons" />
             <input required type="text" placeholder="Enter your username"></input>
           </div>
 
           <div className="sign-input-box">
             <p>Password</p>
-            <CiLock className="icons"/>
+            <CiLock className="icons" />
             <input required type="text" placeholder="Enter your password"></input>
           </div>
 
           <div className="sign-input-box">
             <p>Confirm Password</p>
-            <CiLock className="icons"/>
+            <CiLock className="icons" />
             <input required type="text" placeholder="Re-Enter your password"></input>
           </div>
 
           <div className="sign-input-box">
             <p>Email</p>
-            <CiMail className="mail-icon"/>
+            <CiMail className="mail-icon" />
             <input required type="text" placeholder="Enter your email"></input>
           </div>
 
           <div className="sign-input-box">
             <p>Confirm Email</p>
-            <CiMail className="mail-icon"/>
+            <CiMail className="mail-icon" />
             <input required type="text" placeholder="Re-Enter your email"></input>
           </div>
 
@@ -51,7 +51,7 @@ export default function SignUp() {
           </div>
         </form>
 
-        </div>
+      </div>
     </div>
   );
 }
